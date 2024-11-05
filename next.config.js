@@ -5,8 +5,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
-  assetPrefix: '/Ai-finance-manager/',
+  publicRuntimeConfig: {
+    basePath: '/Ai-finance-manager',
+  },
+  assetPrefix: '/Ai-finance-manager',
 };
 
 module.exports = nextConfig; 
