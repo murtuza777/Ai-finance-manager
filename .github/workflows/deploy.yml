@@ -27,7 +27,11 @@ jobs:
       - name: Build Project
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /Ai-finance-manager
+          NEXT_PUBLIC_BASE_URL: https://murtuza777.github.io/Ai-finance-manager
+        
+      - name: Copy public assets
+        run: |
+          cp -r public/* out/
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

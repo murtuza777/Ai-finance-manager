@@ -8,7 +8,7 @@ const nextConfig = {
   publicRuntimeConfig: {
     basePath: '/Ai-finance-manager',
   },
-  assetPrefix: '/Ai-finance-manager',
+  assetPrefix: 'https://murtuza777.github.io/Ai-finance-manager',
 };
 
 module.exports = nextConfig; 

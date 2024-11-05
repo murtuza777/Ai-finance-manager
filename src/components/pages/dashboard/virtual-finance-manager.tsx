@@ -44,6 +44,7 @@ import { Tooltip } from "recharts"
 import { useAuth } from '@/contexts/AuthContext'
 import type { DateRange } from "react-day-picker"
 import { useRouter } from 'next/router';
+import { getAssetUrl } from '@/lib/utils';
 
 // Mock API for financial data
 const mockAPI = {
@@ -175,7 +176,10 @@ const Header = ({ setSidebarOpen, darkMode, setDarkMode }: HeaderProps) => {
           </SelectContent>
         </Select>
         <Avatar>
-          <AvatarImage src={user?.photoURL || "/placeholder-avatar.jpg"} alt={user?.email || "User"} />
+          <AvatarImage 
+            src={user?.photoURL || getAssetUrl('/placeholder-avatar.jpg')} 
+            alt={user?.email || "User"} 
+          />
           <AvatarFallback>{user?.email?.[0].toUpperCase() || "U"}</AvatarFallback>
         </Avatar>
         <div className="flex items-center space-x-2">
