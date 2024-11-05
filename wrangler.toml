@@ -1,0 +1,12 @@
+name = "ai-finance-manager"
+main = "src/worker.ts"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "D1_DB"
+database_name = "finance_db"
+database_id = "0c4ff38c-1888-4136-a454-733e2dc19edd"
+
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "8af7c010670a46698ea08348d43e3acd"
